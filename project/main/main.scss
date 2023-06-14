@@ -50,7 +50,9 @@ li {
   color: #364844;
 }
 .main-pic {
-  width: 50vw;
+  width: 43vw;
+  height: 340px;
+  object-fit: cover;
 }
 .second-pic {
   width: 40vw;
@@ -179,9 +181,11 @@ li {
 @media screen and (max-width: 980px) {
   .main-section {
     flex-direction: column-reverse;
+    width: 100%;
   }
   .main-text-container {
     padding-right: 0;
+    padding-left: 5%;
   }
   .second-container {
     flex-direction: column-reverse;

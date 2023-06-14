@@ -73,11 +73,13 @@
 @media screen and (max-width: 980px) {
   .main-header-contariner {
     justify-content: normal;
+    height: 45px;
     position: fixed;
     width: 100%;
     z-index: 1;
     background: white;
   }
+
   .container-data {
     position: absolute;
     top: 27px;
@@ -135,7 +137,7 @@
     align-items: normal;
     background: #45927fcf;
     z-index: 1;
-    margin-top: 75px;
+    margin-top: 71px;
   }
   .button-seletion {
     display: inline;
