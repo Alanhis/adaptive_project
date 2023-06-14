@@ -1,0 +1,294 @@
+body {
+  margin: 0;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-section {
+  display: flex;
+  background: #f8fbfa;
+}
+.main-text-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15%;
+  padding-right: 165px;
+}
+.second-container {
+  margin-top: 100px;
+  display: flex;
+  background: #e2f0ef;
+  justify-content: center;
+}
+.second-text-container {
+  padding-top: 53px;
+  padding-left: 63px;
+  padding-bottom: 56px;
+}
+.price-container {
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+}
+.scroll-container {
+  display: flex;
+  gap: 36px;
+  margin-top: 39px;
+}
+li::marker {
+  color: #1fa181;
+}
+li {
+  font-family: "PT Sans Caption";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #364844;
+}
+.main-pic {
+  width: 50vw;
+}
+.second-pic {
+  width: 40vw;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+}
+.main-text {
+  font-family: "PT Sans Caption";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 47px;
+  color: #364844;
+}
+.main-text-info {
+  font-family: "PT Sans Caption";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #364844;
+}
+.second-main-text {
+  margin: 0;
+  font-family: "PT Sans Caption";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: #364844;
+}
+.second-main-info-text {
+  margin: 0;
+  font-family: "PT Sans Caption";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: #364844;
+}
+.price {
+  font-family: "PT Sans Caption";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #364844;
+}
+
+.sales {
+  font-family: "PT Sans Caption";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  text-decoration-line: line-through;
+
+  color: #868686;
+}
+.sales-main-button {
+  width: 196px;
+  height: 43px;
+  background: #0dbc91;
+  border-radius: 50px;
+  border: none;
+  font-family: "PT Sans Caption";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+  margin-right: 14px;
+  color: #ffffff;
+}
+.sales-main-button:hover {
+  background-color: #00d29f;
+}
+.sales-offbutton {
+  width: 196px;
+  height: 43px;
+  background: #0dbc9000;
+  border-radius: 50px;
+  border: 1px solid #0dbc91;
+  font-family: "PT Sans Caption";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+
+  color: #0dbc91;
+}
+.sales-offbutton:hover {
+  background-color: #0dbc91;
+  color: #ffffff;
+}
+.scroll-main-text {
+  font-family: "PT Sans Caption";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #364844;
+}
+
+.scroll-unactive-text {
+  font-family: "PT Sans Caption";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #c0c0c0;
+}
+.scroll-pointer:hover {
+  filter: invert(61%) sepia(99%) saturate(3288%) hue-rotate(129deg)
+    brightness(98%) contrast(90%);
+}
+@media screen and (max-width: 980px) {
+  .main-section {
+    flex-direction: column-reverse;
+  }
+  .main-text-container {
+    padding-right: 0;
+  }
+  .second-container {
+    flex-direction: column-reverse;
+    margin-left: 18px;
+    margin-right: 18px;
+    overflow: hidden;
+    border-radius: 5px 5px 0px 0px;
+  }
+  .second-text-container {
+    padding-left: 23px;
+  }
+  .button-container {
+    display: flex;
+  }
+  .sales-main-button {
+    width: 137px;
+    height: 43px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .sales-offbutton {
+    width: 137px;
+    height: 43px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .main-pic {
+    width: 100%;
+  }
+  .second-pic {
+    width: 100%;
+    clip-path: none;
+  }
+  .main-text {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+    color: #364844;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .main-text-info {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #364844;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  .second-main-text {
+    font-family: "PT Sans Caption";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #364844;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .second-main-info-text {
+    font-family: "PT Sans Caption";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #364844;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  .price {
+    font-family: "PT Sans Caption";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #364844;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .sales {
+    font-family: "PT Sans Caption";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration-line: line-through;
+    color: #868686;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  li {
+    font-family: "PT Sans Caption";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 145%;
+    /* or 20px */
+
+    color: #364844;
+  }
+}
