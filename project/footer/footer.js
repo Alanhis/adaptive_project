@@ -6,7 +6,7 @@ import "./footer.scss";
 document.querySelector("footer").innerHTML = ` 
 <img class="footer-logo" src=${Logo} />
       <div class="footer-selecter-container ">
-        <SelecterComponent />
+        <div class="selector"></div>
       </div>
       <div class="footer-icon-container">
         <img class="footer-icon" src=${InstagramLogo} />

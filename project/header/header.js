@@ -23,7 +23,7 @@ document.querySelector("header").innerHTML = `
     </div>
   </section>
   <section class="container-selector">
-    
+  <div class="selector"></div>
     <button class="button-seletion"> Записаться на прием</button>
   </section>
 `;
