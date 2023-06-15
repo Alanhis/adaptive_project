@@ -7,9 +7,7 @@
   padding-top: 15px;
   padding-bottom: 12px;
 }
-.hamburger-react {
-  display: none;
-}
+
 .button {
   margin-left: 35px;
   width: 196px;
@@ -70,6 +68,9 @@
 .button-seletion {
   display: none;
 }
+.hamburger-menu {
+  display: none;
+}
 @media screen and (max-width: 980px) {
   .main-header-contariner {
     justify-content: normal;
@@ -88,7 +89,7 @@
   .container-selector {
     display: none;
   }
-  .hamburger-react {
+  .hamburger-menu {
     display: inline;
   }
   .button {
@@ -103,6 +104,7 @@
   .street-text {
     display: none;
   }
+
   .header-text {
     font-weight: 700;
     font-size: 16px;
