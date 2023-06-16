@@ -3,7 +3,7 @@ import MainImage from "../../icon/image-1.jpg";
 import PointLeft from "../../icon/point-left.svg";
 import PointRight from "../../icon/point-right.svg";
 import "./main.scss";
-
+let counter = 1;
 document.querySelector("main").innerHTML = ` 
 <section class="main-section">
 <div class="main-text-container">
@@ -39,7 +39,7 @@ document.querySelector("main").innerHTML = `
 <div class="scroll-container">
 <img class="scroll-pointer btn-left" src=${PointLeft} />
 <p class="scroll-main-text">
-  1<span class="scroll-unactive-text">/4</span>
+  ${counter}<span class="scroll-unactive-text">/4</span>
 </p>
 <img class="scroll-pointer btn-right" src=${PointRight} />
 </div>`;
@@ -47,13 +47,28 @@ document.addEventListener("DOMContentLoaded", () => {
   const btnPrev = document.getElementsByClassName("btn-left")[0];
 
   const btnNext = document.getElementsByClassName("btn-right")[0];
-  console.log(btnNext);
+
   const slider = ItcSlider.getOrCreateInstance(".slider", { loop: true });
 
   btnPrev.addEventListener("click", () => {
     slider.slidePrev();
+    --counter;
+    if (counter == 0) {
+      counter = 4;
+    }
+    document.querySelector(
+      ".scroll-main-text"
+    ).innerHTML = ` ${counter}<span class="scroll-unactive-text">/4</span> `;
   });
   btnNext.addEventListener("click", () => {
     slider.slideNext();
+
+    ++counter;
+    if (counter == 5) {
+      counter = 1;
+    }
+    document.querySelector(
+      ".scroll-main-text"
+    ).innerHTML = ` ${counter}<span class="scroll-unactive-text">/4</span> `;
   });
 });

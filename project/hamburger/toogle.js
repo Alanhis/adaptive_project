@@ -15,6 +15,5 @@ export function toogleBurger() {
         .getElementsByClassName("container-selector")[0]
         .classList.remove("open-mobilse-selector");
     }
-    console.log(burgerStatus.classList.contains("is-active"));
   });
 }
