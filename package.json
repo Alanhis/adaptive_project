@@ -2,7 +2,7 @@
   "name": "rocket_business",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://rocket_business/",
+  "homepage": "https://alanhis.github.io/rocket_business/",
   "type": "module",
   "scripts": {
     "dev": "vite",
