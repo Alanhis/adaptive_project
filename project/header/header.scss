@@ -1,3 +1,5 @@
+@import "../var";
+
 .container {
   display: flex;
 }
@@ -9,15 +11,14 @@
 }
 
 .button {
+  @extend .regular-text;
   margin-left: 35px;
   width: 196px;
   height: 43px;
   background: #0dbc91;
   border-radius: 50px;
   border: none;
-  font-family: "PT Sans Caption";
-  font-style: normal;
-  font-weight: 400;
+
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
@@ -33,25 +34,18 @@
   display: none;
 }
 .header-text {
-  margin: 0;
-  font-family: "PT Sans Caption";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+  @extend .regular-text;
   line-height: 24px;
-  /* identical to box height, or 150% */
+  margin: 0;
   display: flex;
   align-items: center;
   color: #364844;
 }
 .street-text {
+  @extend .regular-text;
   margin: 0;
-  font-family: "PT Sans Caption";
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height, or 150% */
   color: #868686;
 }
 .contaner-place {
@@ -107,7 +101,6 @@
 
   .header-text {
     font-weight: 700;
-    font-size: 16px;
     line-height: 21px;
     text-align: right;
     flex: none;
