@@ -12,6 +12,9 @@ body {
   display: flex;
   background: #f8fbfa;
 }
+.button-container {
+  display: flex;
+}
 .main-text-container {
   display: flex;
   flex-direction: column;
@@ -22,7 +25,7 @@ body {
   margin-top: 100px;
   display: flex;
   background: #e2f0ef;
-  justify-content: center;
+  justify-content: space-between;
 }
 .second-text-container {
   padding-top: 53px;
