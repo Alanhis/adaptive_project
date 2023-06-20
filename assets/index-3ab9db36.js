@@ -2,7 +2,7 @@
 <header></header>
 <main class="main"></main>
 <footer class="footer-container"> </footer>
-`;const l="https://alanhis.github.io/rocket_business/assets/logo-a52b8ed2.svg",m="https://alanhis.github.io/rocket_business/assets/map-39ef8ea1.svg",d="https://alanhis.github.io/rocket_business/assets/whatapp-f2fa392a.svg";document.querySelector("header").innerHTML=` 
+`;const l="https://alanhis.github.io/adaptive_project/assets/logo-a52b8ed2.svg",m="https://alanhis.github.io/adaptive_project/assets/map-39ef8ea1.svg",d="https://alanhis.github.io/adaptive_project/assets/whatapp-f2fa392a.svg";document.querySelector("header").innerHTML=` 
   <section class="container main-header-contariner">
   <div class ="hamburger-menu"> </div>
     <section class="container container-data">
@@ -26,7 +26,7 @@
   <div class="selector"></div>
     <button class="button-seletion"> Записаться на прием</button>
   </section>
-`;const u="https://alanhis.github.io/rocket_business/assets/image-1-dd9c478d.jpg",p="https://alanhis.github.io/rocket_business/assets/point-left-0178e840.svg",g="https://alanhis.github.io/rocket_business/assets/point-right-be17c049.svg";let n=1;document.querySelector("main").innerHTML=` 
+`;const u="https://alanhis.github.io/adaptive_project/assets/image-1-dd9c478d.jpg",p="https://alanhis.github.io/adaptive_project/assets/point-left-0178e840.svg",g="https://alanhis.github.io/adaptive_project/assets/point-right-be17c049.svg";let n=1;document.querySelector("main").innerHTML=` 
 <section class="main-section">
 <div class="main-text-container">
   <p class="main-text">
@@ -64,7 +64,7 @@
   ${n}<span class="scroll-unactive-text">/4</span>
 </p>
 <img class="scroll-pointer btn-right" src=${g} />
-</div>`;document.addEventListener("DOMContentLoaded",()=>{const t=document.getElementsByClassName("btn-left")[0],c=document.getElementsByClassName("btn-right")[0],a=ItcSlider.getOrCreateInstance(".slider",{loop:!0});t.addEventListener("click",()=>{a.slidePrev(),--n,n==0&&(n=4),document.querySelector(".scroll-main-text").innerHTML=` ${n}<span class="scroll-unactive-text">/4</span> `}),c.addEventListener("click",()=>{a.slideNext(),++n,n==5&&(n=1),document.querySelector(".scroll-main-text").innerHTML=` ${n}<span class="scroll-unactive-text">/4</span> `})});const v="https://alanhis.github.io/rocket_business/assets/instagram-b073ae20.svg",f="https://alanhis.github.io/rocket_business/assets/telegram-3c86afef.svg";document.querySelector("footer").innerHTML=` 
+</div>`;document.addEventListener("DOMContentLoaded",()=>{const t=document.getElementsByClassName("btn-left")[0],c=document.getElementsByClassName("btn-right")[0],a=ItcSlider.getOrCreateInstance(".slider",{loop:!0});t.addEventListener("click",()=>{a.slidePrev(),--n,n==0&&(n=4),document.querySelector(".scroll-main-text").innerHTML=` ${n}<span class="scroll-unactive-text">/4</span> `}),c.addEventListener("click",()=>{a.slideNext(),++n,n==5&&(n=1),document.querySelector(".scroll-main-text").innerHTML=` ${n}<span class="scroll-unactive-text">/4</span> `})});const v="https://alanhis.github.io/adaptive_project/assets/instagram-b073ae20.svg",f="https://alanhis.github.io/adaptive_project/assets/telegram-3c86afef.svg";document.querySelector("footer").innerHTML=` 
 <img class="footer-logo" src=${l} />
       <div class="footer-selecter-container ">
         <div class="selector"></div>
@@ -91,7 +91,7 @@
   <span class="hamburger-inner"></span>
 </span>
 </button>
-`;b();const y="https://alanhis.github.io/rocket_business/assets/image-2-060d19d2.jpg";[...document.getElementsByClassName("second-container")].map(t=>{t.innerHTML=` 
+`;b();const y="https://alanhis.github.io/adaptive_project/assets/image-2-060d19d2.jpg";[...document.getElementsByClassName("second-container")].map(t=>{t.innerHTML=` 
 
     <div class="second-text-container">
       <p class="second-main-text">CHECK-UP</p>
